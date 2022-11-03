@@ -1,0 +1,1 @@
+<h2>Contact page</h2><?php /**PATH C:\Users\User\multisystem-en\resources\views/contact.blade.php ENDPATH**/ ?>
