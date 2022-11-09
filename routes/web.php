@@ -4,8 +4,30 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 
-Route::get("/",function() {
+Route::get('/', function () {
     return view('home');
+})->name('home');
+
+Route::post('/signup', [
+    'uses' => 'UserController@postSignUp',
+    'as' => 'signup'
+]);
+
+Route::post('/signin', [
+    'uses' => 'UserController@postSignIn',
+    'as' => 'signin'
+]);
+
+Route::get('/dashboard', [
+    'uses' => 'UserController@getDashboard',
+    'as' => 'dashboard',
+    'widdleware' => 'auth'
+]);
+
+/* 
+Route::post('/sign_in',function() {
+
+    return view('sign_in');
 });
 
 Route::get("/contact",function() {
@@ -22,8 +44,5 @@ Route::get('/blog',function() {
 
 Route::get('/services',function() {
     return view('services');
-});
-
-Route::get('/login',function() {
-    return view('login');
-});
+}); 
+*/

@@ -1,0 +1,1 @@
+<h1>Dashboard</h1><?php /**PATH C:\Users\User\multisystem-en\resources\views/dashboard.blade.php ENDPATH**/ ?>

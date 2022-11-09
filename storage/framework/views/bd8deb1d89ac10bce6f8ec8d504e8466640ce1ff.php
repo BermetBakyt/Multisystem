@@ -1,1 +1,0 @@
-<h2>Blog page</h2><?php /**PATH C:\Users\User\multisystem-en\resources\views/blog.blade.php ENDPATH**/ ?>
